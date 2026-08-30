@@ -1,1 +1,75 @@
+# Program to perform Add, Delete and Update operations on List, Tuple and Dictionary data structures
 
+#LIST
+print(" LIST OPERATIONS")
+students_list = ["Aditi", "Shamik", "Pratishtha"]
+print("Original List:", students_list)
+
+#ADD
+students_list.append("Palak")
+print("After Adding:", students_list)
+
+#UPDATE
+students_list[1] = "Ananya"
+print("After Updating:", students_list)
+
+# DELETE
+students_list.remove("Aditi")
+print("After Deleting:", students_list)
+
+
+#TUPLE
+print("\n TUPLE OPERATIONS ")
+students_tuple= ("Aditi", "Shamik", "Pratishtha")
+print("Original Tuple:", students_tuple)
+
+#ADD
+students_tuple = students_tuple + ("Rahul",)
+print("After Adding:", students_tuple)
+
+#UPDATE
+students_tuple= ("Aditi", "Ananya", "Pratishtha", "Rahul")
+print("After Updating:", students_tuple)
+
+# Delete - create a new tuple without the element
+students_tuple = tuple(student for student in students_tuple if student != "Aditi")
+print("After Deleting:", students_tuple)
+
+
+#  DICTIONARY 
+print("\n DICTIONARY OPERATIONS ")
+
+students_dict = {
+    101: "Aditi",
+    102: "Palak",
+    103: "Pratishtha"
+}
+
+print("Original Dictionary:", students_dict)
+
+# Add
+students_dict[104] = "Rahul"
+print("After Adding:", students_dict)
+
+# Update
+students_dict[102] = "Ananya"
+print("After Updating:", students_dict)
+
+# Delete
+del students_dict[101]
+print("After Deleting:", students_dict)
+
+
+# Q1 What will be the output of the following code snippet?
+
+a = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+print(a[::2])
+# OUTPUT: [1, 3, 5, 7, 9]
+
+# Q2. What will be the output of the following code snippet?
+l = [1, 2, 3]
+init_tuple = ('Python',) * (l.__len__() - l[::-1][0])
+print(init_tuple)
+
+# OUTPUT: Object `snippet` not found.
+#()
