@@ -1,3 +1,163 @@
+# Q1. Dictionary operations
+
+my_dict = {
+    'name': 'ABC',
+    'panel': 'B',
+    'rollno': 34,
+    'marks': 85,
+    'branch': 'CSE'
+}
+
+print("Original dictionary:", my_dict)
+
+my_dict['age'] = 18
+print("After adding:", my_dict)
+
+del my_dict['age']
+print("After deleting:", my_dict)
+
+
+# Q2. Convert list to dictionary
+
+list1 = ['name', 'panel', 'rollno']
+list2 = ['ABC', 'B', 34]
+
+my_dict = {
+    list1[0]: list2[0],
+    list1[1]: list2[1],
+    list1[2]: list2[2]
+}
+
+print("\nDictionary:", my_dict)
+
+
+# Q3. Sort elements of dictionary
+
+my_dict = {
+    'name': 'ABC',
+    'panel': 'B',
+    'rollno': 34,
+    'marks': [65, 87, 67, 94]
+}
+
+print("\nSorted dictionary keys:", sorted(my_dict))
+
+
+# Q4. Convert dictionary to lists
+
+my_dict = {
+    'name': 'ABC',
+    'panel': 'B',
+    'rollno': 34
+}
+
+keys = []
+values = []
+
+for key in my_dict:
+    keys.append(key)
+    values.append(my_dict[key])
+
+print("\nKeys:", keys)
+print("Values:", values)
+
+
+# Q5. Find mean of dictionary values
+
+mydict = {
+    'marks1': 23,
+    'marks2': 123,
+    'marks3': 43,
+    'marks4': 13,
+    'marks5': 39
+}
+
+total = 0
+count = 0
+
+for value in mydict.values():
+    total = total + value
+    count = count + 1
+
+mean = total / count
+
+print("\nMean of all values:", mean)
+
+
+# Q6. Dictionary operations
+
+my_dict = {
+    'name': ['Yash', 'Neel', 'Dev'],
+    'rollno': [11, 12, 13],
+    'marks': [78, 56, 98]
+}
+
+print("\nName:", my_dict['name'][2])
+print("Roll No:", my_dict['rollno'][1])
+
+greatest = my_dict['marks'][0]
+
+for mark in my_dict['marks']:
+    if mark > greatest:
+        greatest = mark
+
+print("Greatest Marks:", greatest)
+
+
+# Q7. Frequency of letters in a string
+
+string = input("\nEnter a string: ")
+
+frequency = {}
+
+for letter in string:
+    if letter in frequency:
+        frequency[letter] = frequency[letter] + 1
+    else:
+        frequency[letter] = 1
+
+print("Frequency:", frequency)
+
+
+# Q8. Quotient and remainder
+
+numerator = int(input("\nEnter numerator: "))
+denominator = int(input("Enter denominator: "))
+
+quotient = numerator // denominator
+remainder = numerator % denominator
+
+result = (quotient, remainder)
+
+print("Quotient and Remainder:", result)
+
+
+# Q9. Number of days between two dates
+
+from datetime import date
+
+d1 = int(input("\nEnter day of first date: "))
+m1 = int(input("Enter month of first date: "))
+y1 = int(input("Enter year of first date: "))
+
+d2 = int(input("Enter day of second date: "))
+m2 = int(input("Enter month of second date: "))
+y2 = int(input("Enter year of second date: "))
+
+date1 = (d1, m1, y1)
+date2 = (d2, m2, y2)
+
+date_1 = date(y1, m1, d1)
+date_2 = date(y2, m2, d2)
+
+days = abs((date_2 - date_1).days)
+
+print("First date:", date1)
+print("Second date:", date2)
+print("Number of days:", days)
+
+
+#----------------------------------------------------------------------------------------------------------------------
 # Program to perform Add, Delete and Update operations on List, Tuple and Dictionary data structures
 
 #LIST
