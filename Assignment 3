@@ -1,4 +1,7 @@
-def right_triangle(a, b, c):
+#To check whether or not the triangle is a right-angled triangle using function
+
+
+ def right_triangle(a, b, c):
     sides = sorted([a, b, c])
 
     if sides[0]**2 + sides[1]**2 == sides[2]**2:
