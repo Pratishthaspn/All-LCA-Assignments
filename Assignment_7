@@ -44,3 +44,7 @@ plt.figure(figsize=(6.5, 5))
 sns.heatmap(correlation, annot=True, cmap="Blues", vmin=-1, vmax=1)
 plt.title("Correlation Heatmap")
 plt.show()
+#________________________________________________________________
+plt.grid(True)
+plt.savefig("python_marks_line_plot.png", dpi=300)  # Add this line
+plt.show()
