@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 # Load the CSV dataset
-df = pd.read_csv("sample_data_assignment_07.csv")
+df = pd.read_csv("notebooks/data.csv")
 
 # Display the dataset
 print("Dataset:")
